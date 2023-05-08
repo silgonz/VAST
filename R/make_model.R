@@ -157,7 +157,7 @@ function( TmbData,
                   supernodal = supernodal )
   }else{
     TMB::compile( file = paste0(Version_framework,".cpp"),
-                  flags = "-Wno-ignored-attributes -O2 -mfpmath=sse -msse2 -mstackrealign" )
+                  flags = "-Wno-ignored-attributes -O2 -mstackrealign" )
   }
 
   # Build object
