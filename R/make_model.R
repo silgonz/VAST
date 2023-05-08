@@ -153,7 +153,7 @@ function( TmbData,
   if( "framework" %in% formalArgs(TMB::compile)){
     TMB::compile( file = paste0(Version_framework,".cpp"),
                   framework = framework,
-                  flags = "-Wno-ignored-attributes -O2 -mfpmath=sse -msse2 -mstackrealign",
+                  flags = "-Wno-ignored-attributes -O2 -mstackrealign",
                   supernodal = supernodal )
   }else{
     TMB::compile( file = paste0(Version_framework,".cpp"),
